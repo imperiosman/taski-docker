@@ -73,7 +73,7 @@ jobs:
           # Хорошо ли держать логин и пароль прямо в коде workflow?
           # Нет, это нехорошо
       - name: Push to DockerHub
-        # Одновременный билд и пуш образа в Docker Hub
+        # Одновременный билд и пуш образа в DockerHub
         uses: docker/build-push-action@v4
         with:
           # Параметр context: ./backend/ указывает, что нужный Dockerfile 
